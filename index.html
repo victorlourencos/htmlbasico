@@ -1,0 +1,248 @@
+<html>
+	<head>
+		<title> Segundo ano Eleodoro </title>
+			<style>
+			
+ 			body {
+          		font-family: Arial, sans-serif;
+            		margin: 0;
+            		padding: 0;
+            		background-color: #f5f5f5;
+        		}
+
+ body:before {
+            content: "0";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Estilos para o botão Fechar */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+
+
+			header {
+           
+			background-size: contain;
+			background-position:center;
+			background-repeat: no-repeat;
+           		color: #ffffff;
+           		text-align: center;
+           		padding: 1rem;
+			line-height: 1.5;
+            		border-radius: 5px;
+            		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        		}
+			
+     			.article {
+            		background-color: #fff;
+			line-height: 1.5;
+            		border-radius: 5px;
+            		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            		padding: 1.5rem;
+            		margin-bottom: 2rem;
+ 			max-width: 1000px;
+           	 	margin: 0 auto;
+            		padding: 2rem;
+       			 }
+
+  			footer {
+           		 background-color: #191970;
+			background-size: contain;
+			background-position:center;
+			background-repeat: no-repeat;
+            		color: #fff;
+            		text-align: center;
+           		padding: 1rem;
+			border-radius: 5px;
+            		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			div > div {
+    			display: inline-block;
+			}
+
+
+			 .meu-botao {
+         		   background-color: #191970;
+        		    color: #fff;
+         		   padding: 10px 20px;
+          		  border: none;
+       			     border-radius: 5px;
+          		  cursor: pointer;
+          		  transition: transform 0.5s; 
+				font-size:12px;
+			font-variant:small-caps;
+			font-family:Arial, Helvetica, sans-serif;
+			text-decoration:none;
+      			  }
+
+      
+ .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+
+
+</style>
+
+
+	</head>
+	<body>
+
+
+		<header><center><img src="capa.png" height="120" width=auto>
+<div>
+    <div>
+        <a href="index.html#historia" class="meu-botao">história</a>
+    </div>
+    <div>
+       <a href="https://www.seusite.com/pagina-de-destino" class="meu-botao">notícias</a>
+    </div>
+ <div>
+        <a href="index.html#cursos" class="meu-botao">cursos técnicos</a>
+    </div>
+ <div>
+        <a href="https://www.seusite.com/pagina-de-destino" class="meu-botao">itinerários</a>
+    </div>
+<div>
+        <a href="https://www.seusite.com/pagina-de-destino" class="meu-botao">contato</a>
+    </div>
+</div>
+</header><br><br>
+
+ <div id="popup" class="popup">
+        <span class="close-button" onclick="fecharPopup()">&#10006;</span>
+      <center>  <h2>Bem-vindo ao nosso site!</h2>
+        <p>Aproveite a sua visita.</p></center>
+    </div>
+ <script>
+        // Função para abrir o popup
+        function abrirPopup() {
+            document.getElementById("popup").style.opacity = "1";
+            document.getElementById("popup").style.pointerEvents = "auto";
+        }
+
+        // Função para fechar o popup
+        function fecharPopup() {
+            document.getElementById("popup").style.opacity = "0";
+            document.getElementById("popup").style.pointerEvents = "none";
+        }
+
+        // Abra o popup quando a página carregar (você pode chamar essa função em algum evento específico)
+        window.onload = function() {
+            abrirPopup();
+        }
+    </script>
+
+			 <div class="article">
+
+ 				<center><img src="foto.png" height="500" width=auto>
+				
+				<p><b> A PRIMEIRA ESCOLA DE CASCAVEL</b></p></center>
+				<div id="historia">
+				<p align="justify"> O Colégio Eleodoro Ébano Pereira foi a primeira instituição escolar de Cascavel, e foi fundado em 1932, quando começou a funcionar precariamente na igreja que se situava à Avenida Iguaçu s/n, deste município, sem nenhum ato oficial que regulamentasse o funcionamento.</p>
+				<p align="justify"> Atualmente o Colégio Eleodoro atende, aproximadamente 1.872 alunos.</p>
+
+
+<h1>Galeria de Imagens</h1>
+
+    <div class="gallery">
+        <img src="imagem1.jpg" alt="Imagem 1">
+        <img src="imagem2.jpg" alt="Imagem 2">
+        <img src="imagem3.jpg" alt="Imagem 3">
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+			 </article>
+			</div>
+</div>
+<br>
+<br>
+
+			<div class="article">
+			<div id="cursos">
+			<center><img src="cursos.png" height="350" width=auto>
+			<p> <b>CURSOS TÉCNICOS</b></p></center>
+				<div id="cursos">
+				<p align="center"> O colégio Eleodoro conta com os seguintes cursos técnicos:</p>
+
+
+
+<center><img src="visual.png" height="100" width=auto></center>
+
+<br>
+<p> No curso de Produção de áudio e Vídeo, o profissional é preparado para atuar em emissoras de TV, rádio, portais de notícia, produtoras e agências de publicidade e propaganda.</p>
+<p> O curso é gratuito. Dura um ano, com as aulas sendo das 18h50 às 22h50. Ao fim, os estudantes receberão o certificado de Técnico em Produção de Áudio e Vídeo.</p>
+<p>Informações pelos telefones (45) 3223-6651, 3223-8024 e 99921-1308.</p>
+
+<br>
+<img src="teatro.png" height="100" width=auto>
+<br>
+<p>Você sonha em ser ator ou atriz? Então não perca essa oportunidade: O curso de Técnico em Teatro é o único curso no campo da arte oferecido na região. e ainda é gratuito.</p>
+<p>O curso dura 3 semestres e as aulas acontecem todas as noites, de segunda à sexta-feira. Tem 13 disciplinas e forma profissionais capazes de criar e gerir as linguagens do teatro.</p>
+<p> Ao concluir o curso, você recebe um certificado DRT, vinculado diretamente ao Ministério do trabalho.</p>
+<p><b> Inscrições abertas.</b> </p>
+<p> <b>Informações: </b>(45) 9229-6727 </p>
+<br>
+<img src="comvisual.png" height="100" width=auto>
+<br><br>
+<img src="sistemas.png" height="100" width=auto>
+<br><br>
+<img src="adm.png" height="100" width=auto>
+<br><br>
+
+
+
+				<p align="justify"> Entre em contato para mais informações</p>
+
+			 </article>
+			</div>
+</div>
+<br>
+</div>
+<br>		
+		<footer> <section id="rodape">
+     
+        <p>Este site foi criado pelos alunos do 2º ano C, como parte de um trabalho escolar da disciplina de Matemática 2.</p>
+    </section>
+        <p>Proíbido copiar, 2023.</p></footer>
+	</body>
+</html>
